@@ -1,0 +1,106 @@
+<resources>
+
+    <string name="app_name">Quiz On The EU</string>
+
+    <!--Text of Question 1; Answer: 1993.-->
+    <string name="question1">#1 When was the European Union officially founded?</string>
+
+    <!--Answers to question 1-->
+    <string name="answer1a">A: 1951</string>
+    <string name="answer1b">B: 1957</string>
+    <string name="answer1c">C: 1986</string>
+    <string name="answer1d">D: 1993</string>
+
+    <!--Text of Question 2; Answer: European Economic Community-->
+    <string name="question2">#2 Which of the following were the predecessor organization of the EU?</string>
+
+    <!--Answers to question 2-->
+    <string name="answer2a">A: Western European Union</string>
+    <string name="answer2b">B: Organization for European Economic Cooperation</string>
+    <string name="answer2c">C: European Economic Community</string>
+    <string name="answer2d">D: The Council of Europe</string>
+
+    <!--Text of Question 3;Answer: In 2018.: 28-->
+    <string name="question3">#3 How many member states are in the EU?</string>
+
+    <!--Answers to question 3-->
+    <string name="answer3a">A: 15</string>
+    <string name="answer3b">B: 27</string>
+    <string name="answer3c">C: 28</string>
+    <string name="answer3d">D: 25</string>
+
+    <!--Text of Question 4;Answer: False-->
+    <string name="question4">#4 The European Union is a federal repbulic of the member nations, similarly to the United States of America.</string>
+
+    <!--Answers to question 4-->
+    <string name="answer4a">A: True</string>
+    <string name="answer4b">B: False</string>
+
+    <!--Text of Question 5; In 2016, it was over 510 million.-->
+    <string name="question5">#5 The population of the Europeans Union (i.e. of all the member states together):</string>
+
+    <!--Answers to question 5-->
+    <string name="answer5a">A: 330 million</string>
+    <string name="answer5b">B: 510 million</string>
+    <string name="answer5c">C: 660 million</string>
+    <string name="answer5d">D: 800 million</string>
+
+    <!--Text of Question 6; Answer: 751-->
+    <string name="question6">#6 The European Parliament has ...... members:</string>
+
+    <!--Answers to question 6-->
+    <string name="answer6a">A: 515</string>
+    <string name="answer6b">B: 626</string>
+    <string name="answer6c">C: 751</string>
+    <string name="answer6d">D: 758</string>
+
+    <!--Text of Question 7; Answer: Frankfurt-->
+    <string name="question7">#7 The headquarters of the European Central Bank is in: ......</string>
+
+    <!--Answers to question 7-->
+    <string name="answer7a">A: Brussels</string>
+    <string name="answer7b">B: Strassbourg</string>
+    <string name="answer7c">C: Frankfurt</string>
+    <string name="answer7d">D: London</string>
+
+    <!--Text of Question 8;Answer: 19 of 28 members-->
+    <string name="question8">#8 How many member states use euro as their official currency?</string>
+
+    <!--Answers to question 8-->
+    <string name="answer8a">A: 15 of 28</string>
+    <string name="answer8b">B: 19 of 28</string>
+    <string name="answer8c">C: 25 of 28</string>
+    <string name="answer8d">D: 27 of 28</string>
+
+    <!--Text of Question 9; Answer: Schengen-->
+    <string name="question9">#9 Select the name of that city or town, where the
+    agreement for abolishing border control at the internal borders of the participating states was signed.</string>
+
+    <!--Answers to question 9-->
+    <string name="answer9a">A: Maastricht</string>
+    <string name="answer9b">B: Schengen</string>
+    <string name="answer9c">C: Nizza</string>
+    <string name="answer9d">D: Lisbon</string>
+
+    <!--Text of Question 10;Answer: Croatia-->
+    <string name="question10">#10 In 2013, which country joined as 28th member state of the EU?</string>
+
+    <!--Answers to question 10-->
+    <string name="answer10a">A: Slovenia</string>
+    <string name="answer10b">B: Slovakia</string>
+    <string name="answer10c">C: Croatia</string>
+    <string name="answer10d">D: Bulgaria</string>
+
+    <!--Text of Question 11;Answer: -->
+    <string name="question11">#11 Who were or are the president of the European Commission? (multiple correct answers)</string>
+
+    <!--Answers to question 11; Answers: José Manuel Barroso, Romando Prodi-->
+    <string name="answer11a">A: José Manuel Barroso</string>
+    <string name="answer11b">B: Federica Mogherini</string>
+    <string name="answer11c">C: Romano Prodi</string>
+    <string name="answer11d">D: Donald Tusk</string>
+
+    <string name="evaluate_button">Evaluate</string>
+    <string name="restart_button">Restart</string>
+
+</resources>
