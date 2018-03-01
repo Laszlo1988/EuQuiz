@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -225,18 +226,29 @@ public class MainActivity extends AppCompatActivity {
 
         boolean hasAnswerChecked11c = answer_11c.isChecked();
 
-        if (hasAnswerChecked11a && hasAnswerChecked11c) {
+        boolean incorrectAnswerChecked = questionsAnswers_11b.isChecked() || questionsAnswers_11d.isChecked();
+
+        if ((hasAnswerChecked11a && hasAnswerChecked11c) && !incorrectAnswerChecked) {
             correct += 1;
         } else {
             incorrect += 1;
         }
 
+        //The Evaluate Button is disabled so that it could not be pushed again after the evaluation.
+
+        Button evaluateBtn = (Button) findViewById(R.id.evaluate_button);
+        evaluateBtn.setEnabled(false);
+
         resultMessage();
     }
 
 
-    //This method clears every checked (Checkboxes and RadioButtons) or written field (EditText).
+    //This method clears every checked (Checkboxes and RadioButtons) or written field (EditText). The method also enables the
+    // Evaluate Button.
     public void restartQuiz(View v) {
+
+        Button evaluateBtn = (Button) findViewById(R.id.evaluate_button);
+        evaluateBtn.setEnabled(true);
 
         questionsAnswers_1.clearCheck();
         questionsAnswers_2.clearCheck();
