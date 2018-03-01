@@ -296,42 +296,14 @@
                 style="@style/questions_style"
                 android:text="@string/question7" />
 
-            <RadioGroup
-                android:id="@+id/question_7_answers"
-                style="@style/radio_group_style">
-
-                <RadioButton
-                    android:id="@+id/answer7a"
-                    style="@style/radio_buttons"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/answer7a" />
-
-                <RadioButton
-                    android:id="@+id/answer7b"
-                    style="@style/radio_buttons"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/answer7b" />
-
-                <RadioButton
-                    android:id="@+id/answer7c"
-                    style="@style/radio_buttons"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/answer7c" />
-
-                <RadioButton
-                    android:id="@+id/answer7d"
-                    style="@style/radio_buttons"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/answer7d" />
-
-            </RadioGroup>
+            <EditText
+                android:id="@+id/answer7"
+                style="@style/radio_group_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/answer7_hint" />
 
         </LinearLayout>
-
 
         <LinearLayout
             style="@style/question_and_buttons_view"

@@ -3,8 +3,10 @@ package com.example.android.quizontheeu;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton answer_4;
     RadioButton answer_5;
     RadioButton answer_6;
-    RadioButton answer_7;
+    EditText answer_7;
     RadioButton answer_8;
     RadioButton answer_9;
     RadioButton answer_10;
@@ -39,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup questionsAnswers_4;
     RadioGroup questionsAnswers_5;
     RadioGroup questionsAnswers_6;
-    RadioGroup questionsAnswers_7;
+
+    String answerGivenToQuestion7;
+    String correctAnswerToQuestion7;
+
     RadioGroup questionsAnswers_8;
     RadioGroup questionsAnswers_9;
     RadioGroup questionsAnswers_10;
@@ -62,13 +67,15 @@ public class MainActivity extends AppCompatActivity {
         answer_4 = findViewById(R.id.answer4b);
         answer_5 = findViewById(R.id.answer5b);
         answer_6 = findViewById(R.id.answer6c);
-        answer_7 = findViewById(R.id.answer7c);
         answer_8 = findViewById(R.id.answer8b);
         answer_9 = findViewById(R.id.answer9b);
         answer_10 = findViewById(R.id.answer10c);
         answer_11a = findViewById(R.id.answer11a);
         answer_11c = findViewById(R.id.answer11c);
 
+        //This variable stores the content of the answer for Question 7 written in an EditText. The answer will be evaluated later.
+
+        answer_7 = (EditText) findViewById(R.id.answer7);
 
         //The following RadioGroups contain all answers. Using these variables the app will be able to reset all RadioButtons
         // to unchecked state. The same stands for the Checkboxes too.
@@ -78,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
         questionsAnswers_4 = findViewById(R.id.question_4_answers);
         questionsAnswers_5 = findViewById(R.id.question_5_answers);
         questionsAnswers_6 = findViewById(R.id.question_6_answers);
-        questionsAnswers_7 = findViewById(R.id.question_7_answers);
         questionsAnswers_8 = findViewById(R.id.question_8_answers);
         questionsAnswers_9 = findViewById(R.id.question_9_answers);
         questionsAnswers_10 = findViewById(R.id.question_10_answers);
@@ -87,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
         questionsAnswers_11c = findViewById(R.id.answer11c);
         questionsAnswers_11d = findViewById(R.id.answer11d);
 
+        //The correct answer to Question 7.
+        correctAnswerToQuestion7 = "Frankfurt";
     }
 
     //This method creates a toast message, which contains the number of correct and incorrect answers.
@@ -95,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         String endMessageForm = "Correct answers: " + correct + "\nIncorrect answers: " + incorrect;
 
-        endMessageForm += "\n1:D\n2:C\n3:C\n4:B\n5:B\n6:C\n7:C\n8:B\n9:B\n10:C\n11:A,C";
+        endMessageForm += "\n1:D\n2:C\n3:C\n4:B\n5:B\n6:C\n7:Frankfurt\n8:B\n9:B\n10:C\n11:A,C";
 
         Toast.makeText(this, endMessageForm, Toast.LENGTH_LONG).show();
     }
@@ -162,11 +170,20 @@ public class MainActivity extends AppCompatActivity {
             incorrect += 1;
         }
 
-        // Question 7: Figure out if the correct answer (c) is selected or not.
+        // Question 7: Figure out if the correct answer (Frankfurt) is written or not.
 
-        hasAnswerSelected = answer_7.isChecked();
+        answerGivenToQuestion7 = answer_7.getText().toString();
 
-        if (hasAnswerSelected) {
+        answerGivenToQuestion7 = answerGivenToQuestion7.toLowerCase();
+        correctAnswerToQuestion7 = correctAnswerToQuestion7.toLowerCase();
+
+        Log.i("MainActivity", "The answer given to Question 7: " + answerGivenToQuestion7);
+        Log.i("MainActivity", "The correct answer is: " + correctAnswerToQuestion7);
+
+        boolean isTypedAnswerCorrect = answerGivenToQuestion7.equals(correctAnswerToQuestion7);
+        Log.i("MainActivity", "Answer is correct: " + isTypedAnswerCorrect);
+
+        if (isTypedAnswerCorrect) {
             correct += 1;
         } else {
             incorrect += 1;
@@ -218,6 +235,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //This method clears every checked (Checkboxes and RadioButtons) or written field (EditText).
     public void restartQuiz(View v) {
 
         questionsAnswers_1.clearCheck();
@@ -226,7 +244,9 @@ public class MainActivity extends AppCompatActivity {
         questionsAnswers_4.clearCheck();
         questionsAnswers_5.clearCheck();
         questionsAnswers_6.clearCheck();
-        questionsAnswers_7.clearCheck();
+
+        answer_7.getText().clear();
+
         questionsAnswers_8.clearCheck();
         questionsAnswers_9.clearCheck();
         questionsAnswers_10.clearCheck();

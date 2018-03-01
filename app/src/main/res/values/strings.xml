@@ -55,13 +55,11 @@
     <string name="answer6d">D: 758</string>
 
     <!--Text of Question 7; Answer: Frankfurt-->
-    <string name="question7">#7 The headquarters of the European Central Bank is in: ......</string>
+    <string name="question7">#7 Where is the headquarters of the European Central Bank?
+        \n(Suggestions: Brussels, Strasbourg, Frankfurt, London)</string>
 
-    <!--Answers to question 7-->
-    <string name="answer7a">A: Brussels</string>
-    <string name="answer7b">B: Strasbourg</string>
-    <string name="answer7c">C: Frankfurt</string>
-    <string name="answer7d">D: London</string>
+    <!--Text of the hint to Question 7-->
+    <string name="answer7_hint">Enter one of the suggested cities</string>
 
     <!--Text of Question 8;Answer: 19 of 28 members-->
     <string name="question8">#8 How many member states use euro as their official currency?</string>
