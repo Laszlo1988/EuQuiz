@@ -56,36 +56,36 @@ public class MainActivity extends AppCompatActivity {
         //The variables for all the views modified in this app are initialized here.
 
         //The following RadioButtons contain the correct answers. The app will check later whether they are selected or not.
-        answer_1 = (RadioButton) findViewById(R.id.answer1d);
-        answer_2 = (RadioButton) findViewById(R.id.answer2c);
-        answer_3 = (RadioButton) findViewById(R.id.answer3c);
-        answer_4 = (RadioButton) findViewById(R.id.answer4b);
-        answer_5 = (RadioButton) findViewById(R.id.answer5b);
-        answer_6 = (RadioButton) findViewById(R.id.answer6c);
-        answer_7 = (RadioButton) findViewById(R.id.answer7c);
-        answer_8 = (RadioButton) findViewById(R.id.answer8b);
-        answer_9 = (RadioButton) findViewById(R.id.answer9b);
-        answer_10 = (RadioButton) findViewById(R.id.answer10c);
-        answer_11a = (CheckBox) findViewById(R.id.answer11a);
-        answer_11c = (CheckBox) findViewById(R.id.answer11c);
+        answer_1 = findViewById(R.id.answer1d);
+        answer_2 = findViewById(R.id.answer2c);
+        answer_3 = findViewById(R.id.answer3c);
+        answer_4 = findViewById(R.id.answer4b);
+        answer_5 = findViewById(R.id.answer5b);
+        answer_6 = findViewById(R.id.answer6c);
+        answer_7 = findViewById(R.id.answer7c);
+        answer_8 = findViewById(R.id.answer8b);
+        answer_9 = findViewById(R.id.answer9b);
+        answer_10 = findViewById(R.id.answer10c);
+        answer_11a = findViewById(R.id.answer11a);
+        answer_11c = findViewById(R.id.answer11c);
 
 
         //The following RadioGroups contain all answers. Using these variables the app will be able to reset all RadioButtons
         // to unchecked state. The same stands for the Checkboxes too.
-        questionsAnswers_1 = (RadioGroup) findViewById(R.id.question_1_answers);
-        questionsAnswers_2 = (RadioGroup) findViewById(R.id.question_2_answers);
-        questionsAnswers_3 = (RadioGroup) findViewById(R.id.question_3_answers);
-        questionsAnswers_4 = (RadioGroup) findViewById(R.id.question_4_answers);
-        questionsAnswers_5 = (RadioGroup) findViewById(R.id.question_5_answers);
-        questionsAnswers_6 = (RadioGroup) findViewById(R.id.question_6_answers);
-        questionsAnswers_7 = (RadioGroup) findViewById(R.id.question_7_answers);
-        questionsAnswers_8 = (RadioGroup) findViewById(R.id.question_8_answers);
-        questionsAnswers_9 = (RadioGroup) findViewById(R.id.question_9_answers);
-        questionsAnswers_10 = (RadioGroup) findViewById(R.id.question_10_answers);
-        questionsAnswers_11a = (CheckBox) findViewById(R.id.answer11a);
-        questionsAnswers_11b = (CheckBox) findViewById(R.id.answer11b);
-        questionsAnswers_11c = (CheckBox) findViewById(R.id.answer11c);
-        questionsAnswers_11d = (CheckBox) findViewById(R.id.answer11d);
+        questionsAnswers_1 = findViewById(R.id.question_1_answers);
+        questionsAnswers_2 = findViewById(R.id.question_2_answers);
+        questionsAnswers_3 = findViewById(R.id.question_3_answers);
+        questionsAnswers_4 = findViewById(R.id.question_4_answers);
+        questionsAnswers_5 = findViewById(R.id.question_5_answers);
+        questionsAnswers_6 = findViewById(R.id.question_6_answers);
+        questionsAnswers_7 = findViewById(R.id.question_7_answers);
+        questionsAnswers_8 = findViewById(R.id.question_8_answers);
+        questionsAnswers_9 = findViewById(R.id.question_9_answers);
+        questionsAnswers_10 = findViewById(R.id.question_10_answers);
+        questionsAnswers_11a = findViewById(R.id.answer11a);
+        questionsAnswers_11b = findViewById(R.id.answer11b);
+        questionsAnswers_11c = findViewById(R.id.answer11c);
+        questionsAnswers_11d = findViewById(R.id.answer11d);
 
     }
 
