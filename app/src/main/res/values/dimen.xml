@@ -6,5 +6,6 @@
     <dimen name="check_box_space">24dp</dimen>
     <dimen name="button">48dp</dimen>
     <dimen name="quantity_text_size">16sp</dimen>
+    <dimen name="title">40sp</dimen>
 
 </resources>

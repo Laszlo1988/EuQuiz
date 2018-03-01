@@ -90,7 +90,7 @@
     <string name="answer10d">D: Bulgaria</string>
 
     <!--Text of Question 11;Answer: -->
-    <string name="question11">#11 Who were or are the president of the European Commission? (multiple correct answers)</string>
+    <string name="question11">#11 Who were the presidents of the European Commission? (multiple correct answers)</string>
 
     <!--Answers to question 11; Answers: José Manuel Barroso, Romando Prodi-->
     <string name="answer11a">A: José Manuel Barroso</string>

@@ -3,7 +3,6 @@ package com.example.android.quizontheeu;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -178,11 +177,7 @@ public class MainActivity extends AppCompatActivity {
         answerGivenToQuestion7 = answerGivenToQuestion7.toLowerCase();
         correctAnswerToQuestion7 = correctAnswerToQuestion7.toLowerCase();
 
-        Log.i("MainActivity", "The answer given to Question 7: " + answerGivenToQuestion7);
-        Log.i("MainActivity", "The correct answer is: " + correctAnswerToQuestion7);
-
         boolean isTypedAnswerCorrect = answerGivenToQuestion7.equals(correctAnswerToQuestion7);
-        Log.i("MainActivity", "Answer is correct: " + isTypedAnswerCorrect);
 
         if (isTypedAnswerCorrect) {
             correct += 1;
